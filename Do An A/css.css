@@ -1,0 +1,702 @@
+@font-face {
+    font-family: "OneNikeCurrency";
+    src: url('fonts/OneNikeCurrency.woff') format('woff');
+    font-weight: bold;
+}
+
+.body {
+	display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-family: OneNikeCurrency,Helvetica,Arial,sans-serif;
+    min-width: 768px; 
+    overflow: visible; 
+    position: relative;
+    min-height: 100%;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+
+.top{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    font-size: 16px;
+    line-height: 1.5em;
+    width: 100%;
+    min-width: 768px;
+    box-sizing: border-box;
+}
+.top-bar {
+    position: relative;
+    top: 0;
+    z-index: 999;
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 1px solid #E5E5E5;
+    background: white;
+    color: #8D8D8D;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+.top-bar-left {
+    left: 0;
+    position: absolute;
+    top: -1px;
+    display: table;
+    margin: 0;
+    padding: 0 ;
+    display: inline-block;
+    vertical-align: middle;
+}
+.top-bar-item{
+	border-right: 1px solid #E5E5E5;
+	display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    display: inline-block;
+    padding: 0 32px;
+    font-size: 14px;
+    color: #8D8D8D;
+    text-decoration: none;
+    outline: 0;
+}
+.item-link{
+	color: #8D8D8D;
+    text-decoration: none;
+    outline: 0;
+}
+.item-link:hover {
+    text-decoration: none;
+    color: black;
+}
+.top-bar-right {
+    right: 13px;
+    position: absolute;
+    top: -1px;
+    display: table;
+    margin: 0;
+    padding: 0 ;
+    display: inline-block;
+    vertical-align: middle;
+}
+.join{
+    padding: 0 11px;
+    border-bottom: 2px solid transparent;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.login-window{
+    color: #8D8D8D;
+    border: none;
+    display: inline;
+    background-color: transparent;
+}
+.login-window:hover {
+    text-decoration: none;
+    color: black;
+}
+.help:hover {
+    text-decoration: none;
+    color: black;
+}
+.help{
+    height: 37px;
+    color: #8D8D8D;
+    text-decoration: none;
+    outline: 0;
+}
+.cart-icon{
+	height: 37px;
+    color: #8D8D8D;
+    text-decoration: none;
+    outline: 0;
+    padding-top: 5px;
+}
+
+.cart-icon i{
+	font-size: 23px;
+    line-height: 23px;
+}
+.cart-icon:hover {
+    color: black;
+}
+.top-bar-menu{
+	display: table;
+    width: 100%;
+    padding: 0 0 0 31px;
+    background-color: white;
+    border-bottom: 1px solid #E5E5E5;
+    min-width: 768px;
+    box-sizing: border-box 
+}
+.logo{
+    text-align: center;
+    vertical-align: middle;
+    width: 58px;
+    display: table-cell;
+    height: 68px;
+}
+.nav-bar{
+    padding-left: 136px;
+    padding-left: 100px;
+    background-color: white;
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 0px; 
+}
+.search{
+	display: inline-block;
+}
+.glyphicon {
+ position: absolute;
+}
+.logo-link{
+    font-size: 70px;
+    height: 45px;
+    width: 105px;
+}
+.nav-bar-menu{
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+    box-sizing: border-box 
+    padding: 0;
+    width: 80px;
+}
+.nav-bar-link{
+    height: 66px;
+    line-height: 68px;
+}
+.font-nav-bar{
+	display: inline-block;
+	color: #111;
+    font-weight: 400;
+    font-family: OneNikeCurrency,'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;
+}
+.search-bar{
+    position: relative;
+    vertical-align: middle;
+    width: 224px;
+    display: table-cell;
+    height: 68px;
+    box-sizing: border-box
+}
+.search{
+    font-size: 14px;
+    line-height: 1.714285714285714;
+    -webkit-text-size-adjust: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #111;
+    background-color: #fff;
+    box-sizing: border-box 
+}
+.search-text{
+	padding-right: 50px;
+	position: relative;
+}
+#body{
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+.fix{
+	padding-top: 110px;
+}
+.title-section{
+    padding: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 3em;
+}
+.title-text{
+    text-align: center;
+    font-size: 1em;
+}
+.title-button{
+    text-align: center;
+    margin: 20px;
+}
+.title-button button{
+    background-color: black;
+    color: white;
+}
+.one-hundred-width{
+    width: 100%;
+}
+
+footer{
+	display: block;
+	background-color: #191919;
+	clear: both;
+}
+#all-footer{
+
+    clear: both;
+    padding: 42px 42px 0;
+    min-width: 684px;
+    max-width: 1040px;
+    margin: 0 auto;
+    color: #999;
+}
+.footer-bar{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin:0 auto;
+}
+
+.footer-menu-text{
+    min-width: 140px;
+    margin-right: 20px;
+    float: left;
+    padding-left: 0px;
+}
+.footer-text{
+    height: 28px;
+    font-weight: 400;
+    font-family: OneNikeCurrency,'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;
+    color: #FFF;
+}
+.country{
+	height: 37px;
+    color: #8D8D8D;
+    text-decoration: none;
+    outline: 0;
+}
+.country:hover {
+    text-decoration: none;
+    color:#fff;
+}
+.footer-text-link{
+    color: #FFF;
+    outline: 0;
+    text-decoration: none;   
+}
+.footer-text-link-min:hover {
+    text-decoration: none;
+    color:#fff;
+}
+.footer-text-link:hover {
+    text-decoration: none;
+    color:#fff;
+}
+.footer-text-min{
+	font-family:'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;
+    font-size: .788em;
+    padding-top: 3px;
+    height: 28px;
+	color: #999;
+}
+
+.footer-text-link-min{
+    color: #999;
+    outline: 0;
+    text-decoration: none;   
+}
+.web-connect{
+    float: none;
+    margin-right: 0;
+    text-align: right;
+}
+.web-link{
+    font-size: 0;
+    margin-top: -7px;
+    margin-right: 10px;
+    text-align: right;
+    display: inline;
+}
+.fa{
+	color: #999;
+}
+.fa:hover {
+    text-decoration: none;
+    color:#fff;
+}
+.footer-container{
+	font-size:.625em;
+	display: inline-block;
+    width: 100%;
+    padding: 12px 0 0 0;
+    border-top: 1px solid #444;
+    margin-top: 42px;
+    vertical-align: top;
+}
+.login-footer{
+	padding: 0 12px 0 0;
+    font-size: 14px;
+    float: left;
+}
+.logo-footer{
+    float: left;
+    margin-top: -1px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.address{
+	float: left;
+	font-size:12px;
+	margin-top: 3px;
+}
+.founder{
+    float: none;
+    text-align: right;
+    margin: -6px 0 6px 0;
+}
+.founder-bar{
+    position: relative;
+    padding: 12px 0px;
+    margin: -12px 0;
+    display: inline-block;
+    font-size: 12px;
+}
+
+-----
+/* dropdown menu */
+
+.dropdown {
+    float: left;
+}
+
+
+.dropdown-content {
+	width: 100%;
+	padding-left: 0;
+    display: none;
+    position: absolute;
+    min-width: 360px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #fff;
+
+}
+
+.dropdown-content a {
+    padding: 5px 2px;
+    display: block;
+    text-align: left;
+    font-family: 'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #111;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    background-color: #fff;
+    height: 320px;
+    border-right: 1px solid #E5E5E5;
+}
+.column a {
+    float: none;
+ 	color: #111;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+}
+.all-row{
+width:100%;
+padding: 20px 20px;
+background-color: #fff;
+}
+------
+*{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.avatar {
+    width: 200px;
+	height:200px;
+    border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+	display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 45%; 
+    height: 70%;
+	padding-bottom: 30px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+.notmember{
+    line-height: 14px;
+    padding: 10px 0 0;
+    text-align: center;
+}
+-----
+/*Shop css*/
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
+
+.left-nav-side{
+    display: inline-block;
+    position: absolute;
+    padding: 24px;
+    width: 256px;
+}
+.nav-line{
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+    height: 1px;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.left-nav-header{
+    margin-bottom: 21px;
+}
+.nav-header{
+    font-size: 30px;
+    margin-bottom: 21px;
+}
+.nav-category a{
+    display: block;
+    font-family: Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.nav-category a:hover{
+    color: #8d8d8d;
+    text-decoration: none;
+}
+.left-nav-filter{
+    margin-top: 33px;
+}
+.nav-filter-header{
+    font-size: 30px;
+    margin-bottom: 21px;
+}
+.nav-filter-dimension{
+    width: 100%;
+}
+.nav-filter-dimension div{
+    width: 100%;
+}
+.nav-filter-dimension-header{
+    cursor: pointer;
+    padding-top: 21px;
+    padding-bottom: 5px;
+}
+.nav-filter-dimension-header:after{
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.nav-filter-dimension-header.collapsed:after{
+    content: '\2212';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.nav-filter-dimension-body ul{
+    padding: 0px;
+}
+.nav-filter-dimension-body a{
+    font-family: Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.nav-filter-dimension-body a:hover{
+    text-decoration: none;
+    color: #8d8d8d;
+}
+.item-section{
+    display: inline-block;
+}
+--------
+/*product*/
+
+.description{
+	width: 950px;
+    margin: 0 auto 0 0;
+}
+.left-description{
+	display: table-cell;
+    width: 100%;
+    padding-right: 25px;
+    vertical-align: top;	
+}
+.top-description{
+	font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.bt-sortby{
+	position: relative;
+	display: table-cell;
+	padding: 20px 20px;
+}
+.dropdown-sortby{
+	width: 100px;
+	height: 30px;
+	margin-top:20px;
+	float: left;
+	text-align: right;
+}
+.sortby{
+	    border-color: #e5e5e5;
+    border-radius: 2px;
+    color: #111;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 38px;
+    height: 38px;
+    padding: 0 35px 0 20px;
+    position: relative;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%
+}
+.column1 {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    height: 120px;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+}
+.all-row{
+width:100%;
+padding: 0 20px;
+background-color: #fff;
+}
+
+.column1 a {
+    float: none;
+ 	color: #111;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.column1 a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+.all-img-product{
+	    width: 999px;
+    margin: 0 auto 0 0;
+}
+.img-product{
+	position: relative;
+    display: inline-block;
+    text-align: left;
+    width: 244px;
+    height: 314px;
+    float: left;
+    margin-bottom: 34px;
+    background: #fff;
+    vertical-align: top;
+}
+.big-images{
+	    width: 220px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+.inf-img{
+	min-height: 20px;
+    border-top: 1px solid #CCC;
+    font-weight: bold;
+    margin: 10px 11px;
+}
+.inf-img p{
+	color: #666;
+	margin: 0;
+	line-height: 18px;
+	font-weight: normal;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 12px;
+}

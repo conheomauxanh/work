@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <meta charset="UTF-8"> -->
+	<link rel="stylesheet" href="css.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+	<title>Nike Plus Co.</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	
+  	<link rel="stylesheet" href="khungdangnhap.html">
+ 	<meta charset="utf-8">
+ 	<script type="text/javascript"src="javascript.js"></script>
+ 	<script type="text/javascript" src="products.js"></script>
+ 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+ 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+
+<script>
+// If user clicks anywhere outside of the modal, Modal will close
+
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<body class="body" background="../background1.png">
+		<div>
+			<nav class="top">
+				<div class="top-bar">
+					<ul class="top-bar-left">
+						<li class="top-bar-item">
+							<a href="#" class="item-link">NikePlus</a>
+						</li>
+						<li class="top-bar-item">
+							<a href="#" class="item-link">Adidas</a>
+						</li>
+						<li class="top-bar-item">
+							<a href="#" class="item-link">Converse</a>
+						</li>
+						<li class="top-bar-item">
+							<a href="#" class="item-link">D&G</a>
+						</li>
+					</ul>
+					<ul class="top-bar-right">
+						<li class="join">
+							<a href="#" class="login-window" onclick="document.getElementById('modal-wrapper').style.display='block'">
+								Join/Log In To NikePlus Account
+							</a>
+						</li>
+												 
+						<li class="join">
+							<a href="#" class="help">Help</a>
+						</li>
+						<li class="join">
+							<a href="#" class="cart-icon" ><span class="glyphicon">&#xe116;</span></i></a>
+						</li>
+						<li class="join">
+							<a href="#" class="country"><img src="images/gb_sml.png"></a>
+						</li>
+					</ul>
+<!-- dang nhap -->
+					<div id="modal-wrapper" class="modal"> 
+						<form class="modal-content animate" action="/action_page.php" style="min-width: 469px; max-width: 469px;">					        
+						    <div class="imgcontainer">
+						        <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close">&times;</span>
+						        <img src="images/nike_logo.png" alt="Avatar" style="width: 20%;margin: 20px 0;">
+						        <h1 style="text-align:center;font-family:OneNikeCurrency;max-width: 25ch;margin: 0 auto;color: #111;    font-size: 26px;">YOUR ACCOUNT FOR EVERYTHING NIKE</h1>
+						    </div>
+
+						    <div class="container" style="width: 100%;padding: 0 40px;">
+						        <input type="text" placeholder="Username" name="uname" style="width: 100%;margin: 8px 0px;padding: 3px 8px ">
+						        <input type="password" placeholder="Password" name="psw" style="width: 100%;margin: 8px 0px;padding: 3px 8px">        
+
+						        <input type="checkbox" style="margin:26px 30px;"style="width: 100%;margin: 0"	> Remember me      
+						        <a href="#" style="text-decoration:none; float:right;margin: 14px 30px;">Forgot Password ?</a>
+						        <button type="submit" class="submit"style="width: 100%;    color: #fff;border: none;display: inline;background-color: #111;">Login</button>
+						        <div class="notmember">Not a member? <a href="doanA.html" class="login-window"> Join now</a> </div>
+						    </div>						    
+						</form>						  
+					</div>
+<!-- dang nhap -->
+				</div>
+				<div class="top-bar-menu">
+					<div class="logo">
+						<a href="doanA.html" alt="NikePlus">
+							<img src="images/nike_logo.png" class="logo-link">
+						</a>
+					</div>
+						<ul class="nav-bar">
+						<li class="nav-bar-menu">
+							<div class="dropdown">
+								<a href="men.html" class="nav-bar-link">
+									<span class="font-nav-bar">
+										MEN 
+									</span>
+								</a>
+								<ul class="dropdown-content">	
+									<div class="all-row">
+										<div class="row">
+											<div class="column">
+										    	<li><a href="men.html" style="font-family:OneNikeCurrency,'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;color: #111;font-size: 18px">CLOTHING</a>
+											    </li>
+											    <li><a href="men.html">All Clothing</a></li>
+											    <li><a href="men.html">Tops & T-Shirts</a></li>
+											    <li><a href="men.html">Polos</a></li>
+											    <li><a href="men.html">Kits & Jerseys</a></li>
+											    <li><a href="men.html">Hoodies & Sweatshirts</a></li>
+											    <li><a href="men.html">Jackets & Gilets</a></li>
+											    <li><a href="men.html">Trousers & Leggings</a></li>
+											</div>
+											<div class="column" style="border-right: none">
+										    	<li><a href="men.html" style="font-family:OneNikeCurrency,'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;color: #111;font-size: 18px">SALE</a>
+											    </li>
+											    <li><a href="men.html">Adidas</a></li>
+											    <li><a href="men.html">Tops & T-Shirts</a></li>
+											    <li><a href="men.html">Jackets</a></li>
+											    <li><a href="men.html">Hoodies</a></li>
+											    <li><a href="men.html">Shorts</a></li>
+											    <li><a href="men.html">Surf & Swimwear</a></li>
+											</div>
+										</div>
+									</div>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-bar-menu">
+							<div class="dropdown">
+								<a href="women.html" class="nav-bar-link">
+									<span class="font-nav-bar">
+										WOMEN 
+									</span>
+								</a>
+								<ul class="dropdown-content">	
+									<div class="all-row">
+										<div class="row">
+											<div class="column">
+										    	<li><a href="women.html" style="font-family:OneNikeCurrency,'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;color: #111;font-size: 18px">CLOTHING</a>
+											    </li>
+											    <li><a href="women.html">All Clothing</a></li>
+											    <li><a href="women.html">Tops & T-Shirts</a></li>
+											    <li><a href="women.html">Polos</a></li>
+											    <li><a href="women.html">Kits & Jerseys</a></li>
+											    <li><a href="women.html">Hoodies & Sweatshirts</a></li>
+											    <li><a href="women.html">Jackets & Gilets</a></li>
+											    <li><a href="women.html">Trousers & Leggings</a></li>
+											</div>
+											<div class="column" style="border-right: none">
+										    	<li><a href="#" style="font-family:OneNikeCurrency,'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;color: #111;font-size: 18px">SALE</a>
+											    </li>
+											    <li><a href="women.html">Adidas</a></li>
+											    <li><a href="women.html">Tops & T-Shirts</a></li>
+											    <li><a href="women.html">Jackets</a></li>
+											    <li><a href="women.html">Hoodies</a></li>
+											    <li><a href="women.html">Shorts</a></li>
+											    <li><a href="women.html">Surf & Swimwear</a></li>
+											</div>
+										</div>
+									</div>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-bar-menu">
+							<div class="dropdown">
+								<a href="boys.html" class="nav-bar-link">
+									<span class="font-nav-bar">
+										BOYS 
+									</span>
+								</a>
+								<ul class="dropdown-content">	
+									<div class="all-row">
+										<div class="row">
+											<div class="column">
+										    	<li><a href="boys.html" style="font-family:OneNikeCurrency,'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;color: #111;font-size: 18px">CLOTHING</a>
+											    </li>
+											    <li><a href="boys.html">All Clothing</a></li>
+											    <li><a href="boys.html">Tops & T-Shirts</a></li>
+											    <li><a href="boys.html">Polos</a></li>
+											    <li><a href="boys.html">Kits & Jerseys</a></li>
+											    <li><a href="boys.html">Hoodies & Sweatshirts</a></li>
+											    <li><a href="boys.html">Jackets & Gilets</a></li>
+											    <li><a href="boys.html">Trousers & Leggings</a></li>
+											</div>
+											<div class="column" style="border-right: none">
+										    	<li><a href="boys.html" style="font-family:OneNikeCurrency,'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;color: #111;font-size: 18px">SALE</a>
+											    </li>
+											    <li><a href="boys.html">Adidas</a></li>
+											    <li><a href="boys.html">Tops & T-Shirts</a></li>
+											    <li><a href="boys.html">Jackets</a></li>
+											    <li><a href="boys.html">Hoodies</a></li>
+											    <li><a href="boys.html">Shorts</a></li>
+											    <li><a href="boys.html">Surf & Swimwear</a></li>
+											</div>
+										</div>
+									</div>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-bar-menu">
+							<div class="dropdown">
+								<a href="girls.html" class="nav-bar-link">
+									<span class="font-nav-bar">
+										GIRLS 
+									</span>
+								</a>
+								<ul class="dropdown-content">	
+									<div class="all-row">
+										<div class="row">
+											<div class="column">
+										    	<li><a href="girls.html" style="font-family:OneNikeCurrency,'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;color: #111;font-size: 18px">CLOTHING</a>
+											    </li>
+											    <li><a href="girls.html">All Clothing</a></li>
+											    <li><a href="girls.html">Tops & T-Shirts</a></li>
+											    <li><a href="girls.html">Polos</a></li>
+											    <li><a href="girls.html">Kits & Jerseys</a></li>
+											    <li><a href="girls.html">Hoodies & Sweatshirts</a></li>
+											    <li><a href="girls.html">Jackets & Gilets</a></li>
+											    <li><a href="girls.html">Trousers & Leggings</a></li>
+											</div>
+											<div class="column" style="border-right: none">
+										    	<li><a href="girls.html" style="font-family:OneNikeCurrency,'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;color: #111;font-size: 18px">SALE</a>
+											    </li>
+											    <li><a href="girls.html">Adidas</a></li>
+											    <li><a href="girls.html">Tops & T-Shirts</a></li>
+											    <li><a href="girls.html">Jackets</a></li>
+											    <li><a href="girls.html">Hoodies</a></li>
+											    <li><a href="girls.html">Shorts</a></li>
+											    <li><a href="girls.html">Surf & Swimwear</a></li>
+											</div>
+										</div>
+									</div>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-bar-menu">
+							<div class="dropdown">
+								<a href="collection.html" class="nav-bar-link">
+									<span class="font-nav-bar">
+										COLLECTION 
+									</span>
+								</a>
+								<ul class="dropdown-content">	
+									<div class="all-row">
+										<div class="row">
+											<div class="column">
+										    	<li><a href="collection.html" style="font-family:OneNikeCurrency,'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;color: #111;font-size: 18px">CLOTHING</a>
+											    </li>
+											    <li><a href="collection.html">All Clothing</a></li>
+											    <li><a href="collection.html">Tops & T-Shirts</a></li>
+											    <li><a href="collection.html">Polos</a></li>
+											    <li><a href="collection.html">Kits & Jerseys</a></li>
+											    <li><a href="collection.html">Hoodies & Sweatshirts</a></li>
+											    <li><a href="collection.html">Jackets & Gilets</a></li>
+											    <li><a href="collection.html">Trousers & Leggings</a></li>
+											</div>
+											<div class="column" style="border-right: none">
+										    	<li><a href="collection.html" style="font-family:OneNikeCurrency,'TradeGothicW01-BoldCn20 675334',Helvetica,Arial,sans-serif;color: #111;font-size: 18px">SALE</a>
+											    </li>
+											    <li><a href="collection.html">Adidas</a></li>
+											    <li><a href="collection.html">Tops & T-Shirts</a></li>
+											    <li><a href="collection.html">Jackets</a></li>
+											    <li><a href="collection.html">Hoodies</a></li>
+											    <li><a href="collection.html">Shorts</a></li>
+											    <li><a href="collection.html">Surf & Swimwear</a></li>
+											</div>
+										</div>
+									</div>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="search-bar">
+					    <div class="search-text">
+					    	<span class="glyphicon glyphicon-search" style="position: absolute;padding: 7px 5px;"></span>	    		   
+					        <input type="search" class="form-control" placeholder="Search" name="search" style="padding-left: 25px;">
+				        </div>
+					</div>
+				</div>
+			</nav>			
+		</div>
+<!-- body -->
+	<div class="fix">
+	<!-- left side -->
+		<div class="left-nav-side">
+			<div class="left-nav-header">
+				<div class="nav-header">
+				CLOTHING
+				</div>
+				<span class="nav-line"></span>
+			</div>
+			<div class="nav-category">
+				<a href="#">Compression & Nike Pro</a>
+				<a href="#">Tops & T-Shirts</a>
+				<a href="#">Hoodies & Sweatshirts</a>
+				<a href="#">Jackets & Gilets</a>
+				<a href="#">Trousers & Tights</a>
+				<a href="#">Shorts</a>
+			</div>
+			<div class="left-nav-filter">
+				<div class="nav-filter-header">
+					<div class="nav-header">
+						FILTER
+					</div>
+				</div>				
+				<span class="nav-line"></span>
+				<div class="nav-filter-dimension">
+					<div class="nav-filter-dimension-header collapsed" data-toggle="collapse" data-target="#nfdb1">
+						<!--<div class="dimension-header">-->
+							<span>SPORT</span>
+						<!--</div>-->
+					</div>
+					<div id="nfdb1" class="nav-filter-dimension-body collapse in">
+						<ul>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Lifestyle
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Running
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Gym & Training
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<span class="nav-line"></span>
+				<div class="nav-filter-dimension">
+					<div class="nav-filter-dimension-header collapsed" data-toggle="collapse" data-target="#nfdb2">
+						<!--<div class="dimension-header">-->
+							<span>BEST FOR</span>
+						<!--</div>-->
+					</div>
+					<div id="nfdb2" class="nav-filter-dimension-body collapse in">
+						<ul>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Staying Dry
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Cold Weather
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Warm Weather
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<span class="nav-line"></span>
+				<div class="nav-filter-dimension">
+					<div class="nav-filter-dimension-header collapsed" data-toggle="collapse" data-target="#nfdb3">
+						<!--<div class="dimension-header">-->
+							<span>BRAND</span>
+						<!--</div>-->
+					</div>
+					<div id="nfdb3" class="nav-filter-dimension-body collapse in">
+						<ul>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Nike
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Jordan
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Nike Sportswear
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<span class="nav-line"></span>
+				<div class="nav-filter-dimension">
+					<div class="nav-filter-dimension-header collapsed" data-toggle="collapse" data-target="#nfdb4">
+						<!--<div class="dimension-header">-->
+							<span>COLLECTIONS</span>
+						<!--</div>-->
+					</div>
+					<div id="nfdb4" class="nav-filter-dimension-body collapse in">
+						<ul>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Dri-FIT
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Nike Shield
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Tech Fleece
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<span class="nav-line"></span>
+				<div class="nav-filter-dimension">
+					<div class="nav-filter-dimension-header collapsed" data-toggle="collapse" data-target="#nfdb5">
+						<!--<div class="dimension-header">-->
+							<span>FIT</span>
+						<!--</div>-->
+					</div>
+					<div id="nfdb5" class="nav-filter-dimension-body collapse in">
+						<ul>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Standard
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Tight
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<input type="checkbox" name="">
+									Loose
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<span class="nav-line"></span>
+			</div>
+		</div>
+	<!-- left side end-->
+
+	<!-- right side-->	
+		<div style="min-width: 482px; margin-bottom: 80px; margin-left: 299px; margin-top: 14px;max-width: 1000px;min-height: 900px;">
+			<div class="description" style="	width: 100%; margin: 0 auto 0 0;padding-right: 30px;padding-bottom: 20px">
+				<div class="left-description">
+					<h1 class="top-description"> Boy's Clothing <span style="margin-left: 4px;color:#8D8D8D">(20)</span></h1>
+					<p class="in-description">Gear up for sport and style with the latest men's clothing. Nike technologies and fabrics like Tech Fleece and Dri-FIT combine performance and comfort so you can stay focused on the game. </p>
+				</div>
+				<div class="bt-sortby">
+					<div class="dropdown" style="width: 105px;height: 40px;border-radius: 2px;border: #e5e5e5 solid 1px;">
+							<span style="line-height: 38px;height: 38px;padding: 0 20px 0 30px;font-size: 15px">
+								SORT BY 
+							</span>							
+						<ul class="dropdown-content" style="min-width: 160px;min-height: 130px;">	
+							<div class="all-row">
+								<div class="row">
+									<div class="column1">
+									    <li><a href="men.html">Newest</a></li>
+									    <li><a href="men.html">Highest Rated</a></li>
+									    <li><a href="men.html">Price High-Low</a></li>
+									    <li><a href="men.html">Price Low-High</a></li>
+									</div>
+								</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="all-img-product">
+				
+			</div>
+		</div>
+		</div> 
+	<!-- right side end-->
+	</div>
+<!-- body end-->
+	<footer>
+			<div id="all-footer">
+				<div class="footer-bar">
+					<ul class="footer-menu-text">
+						<li class="footer-text">
+							<a href="#" class="footer-text-link">
+								GIFT CARDS
+							</a>
+						</li>
+						<li class="footer-text">
+							<a href="#" class="footer-text-link">
+								FIND A STORE
+							</a>
+						</li>
+						<li class="footer-text">
+							<a href="#" class="footer-text-link">
+								SIGN UP FOR EMAIL
+							</a>
+						</li>
+						<li class="footer-text">
+							<a href="#" class="footer-text-link">
+								BECOME A MEMBER
+							</a>
+						</li>
+						<li class="footer-text">
+							<a href="#" class="footer-text-link">
+								STUDENT DISCOUNT
+							</a>
+						</li>
+						<li class="footer-text">
+							<a href="#" class="footer-text-link">
+								SITE FEEDBACK
+							</a>
+						</li>
+					</ul>
+					<ul class="footer-menu-text">
+						<li class="footer-text">
+							<a href="#" class="footer-text-link">
+								GET HELP
+							</a>
+						</li>
+						<li class="footer-text-min">
+							<a href="#" class="footer-text-link-min">
+								Shipping and Delivery
+							</a>
+						</li>
+						<li class="footer-text-min">
+							<a href="#" class="footer-text-link-min">
+								Returns
+							</a>
+						</li>
+						<li class="footer-text-min">
+							<a href="#" class="footer-text-link-min">
+								Payment Options
+							</a>
+						</li>
+						<li class="footer-text-min">
+							<a href="#" class="footer-text-link-min">
+								Contact Us
+							</a>
+						</li>
+						<li class="footer-text-min">
+							<a href="#" class="footer-text-link-min">
+								UK Modern Slavery Act Disclosure
+							</a>
+						</li>
+					</ul>
+					<ul class="footer-menu-text">
+						<li class="footer-text">
+							<a href="#" class="footer-text-link">
+								ABOUT NIKE
+							</a>
+						</li>
+						<li class="footer-text-min">
+							<a href="#" class="footer-text-link-min">
+								News
+							</a>
+						</li>
+						<li class="footer-text-min">
+							<a href="#" class="footer-text-link-min">
+								Careers
+							</a>
+						</li>
+						<li class="footer-text-min">
+							<a href="#" class="footer-text-link-min">
+								Investors
+							</a>
+						</li>
+						<li class="footer-text-min">
+							<a href="#" class="footer-text-link-min">
+								Sustainable Innovation
+							</a>
+						</li>
+						<li class="footer-text-min">
+							<a href="#" class="footer-text-link-min">
+								UK Modern Slavery Act Disclosure
+							</a>
+						</li>
+					</ul>
+					<ul class="web-connect">
+						<li class="web-link">
+							<a href="#" class="fb">
+								<span style="font-size:24px" class="fa">&#xf16d;</span>
+							</a>							
+						</li>
+
+						<li class="web-link">
+						<a href="#" class="fb">
+								<span style="font-size:24px" class="fa">&#xf082;</span>
+							</a>
+						</li>
+						<li class="web-link">
+							<a href="#" class="fb">
+								<span style="font-size:24px" class="fa">&#xf166;</span>
+							</a>
+						</li>
+				</div>
+				<div class="footer-container">
+					<ul style="padding-left: 0px">
+						<li class="login-footer">
+							<a href="#" class="country">
+								<span class="logo-footer">
+									<img src="images/gb_sml.png">
+								</span>
+								United Kingdom
+							</a>
+							<li class="address">© 2018 Nike, Inc. All Rights Reserved</li>
+						</li>
+					</ul>
+					<div class="founder">
+						<div class="founder-bar">
+							Make by Tran Phuong Nam and Dau Tran Le Phong
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+
+</body>
+</html>
